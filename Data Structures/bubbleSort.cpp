@@ -6,9 +6,9 @@ int main()
     int hold;
     for (int i = 0; i < 9; i++)
     {
-        for (int j = i + 1; j <= 9; j++)
+        for (int j = 0; j < 10 - i - 1; j++)
         {
-            if (arr[i] > arr[j])
+            if (arr[j] > arr[j+1])
             {
                 hold = arr[i];
                 arr[i] = arr[j];
