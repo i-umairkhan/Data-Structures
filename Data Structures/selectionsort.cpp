@@ -13,10 +13,10 @@ int main()
             {
                 min = j;
             }
-                hold = arr[i];
-                arr[i] = arr[min];
-                arr[min] = hold;
         }
+          hold = arr[i];
+          arr[i] = arr[min];
+          arr[min] = hold;
     }
     for (int i = 0; i < 10; i++)
     {
