@@ -9,13 +9,13 @@ int main()
         min = i;
         for (int j = i + 1; j < 10; j++)
         {
-            if (arr[i] > arr[j])
+            if (arr[min] > arr[j])
             {
                 min = j;
-                hold = arr[i];
-                arr[i] = arr[j];
-                arr[j] = hold;
             }
+                hold = arr[i];
+                arr[i] = arr[min];
+                arr[min] = hold;
         }
     }
     for (int i = 0; i < 10; i++)
