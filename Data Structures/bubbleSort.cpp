@@ -2,17 +2,21 @@
 using namespace std;
 int main()
 {
-    int arr[10] = {3, 5, 7, 1, 9, 2, 4, 8, 1, 2};
-    int hold;
-    for (int i = 0; i < 9; i++)
+    int n =10;
+    int arr[n] = {3, 5, 7, 1, 9, 2, 4, 8, 1, 2};
+    int hold,i,j;
+    int Switched = 1;
+    for (i = 0; i < n&&Switched == 1; i++)
     {
-        for (int j = 0; j < 10 - i - 1; j++)
+        Switched == 0;
+        for (j = 0; j < n - i - 1; j++)
         {
             if (arr[j] > arr[j+1])
             {
-                hold = arr[i];
-                arr[i] = arr[j];
-                arr[j] = hold;
+                hold = arr[j];
+                arr[j] = arr[j+1];
+                arr[j+1] = hold;
+                 Switched == 1;
             }
         }
     }
