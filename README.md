@@ -1,1 +1,1 @@
-# This repo includes data structures in c++
+# This repo includes data structures and algos in c++
